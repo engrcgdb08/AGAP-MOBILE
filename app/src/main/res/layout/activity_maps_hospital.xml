@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity.MapsActivityHospital">
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="408dp"
+        tools:context=".MapsActivity.MapsActivityHospital"
+        tools:layout="@android:layout/simple_spinner_dropdown_item" />
+
+
+    <ImageView
+        android:id="@+id/Photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="440dp"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/editlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="@string/latitude"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="225dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="400dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="400dp"
+        android:ems="8"
+        android:inputType="textPersonName"
+        android:text="Longitude"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="550dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="SendmyLocation"
+        android:text="@string/upload" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/log_out"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="225dp"/>
+
+    <Button
+        android:id="@+id/btnbrowse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="550dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Browse Photo" />
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/back"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="10dp"/>
+
+</FrameLayout>

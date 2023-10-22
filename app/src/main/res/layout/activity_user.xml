@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".User.UserActivity">
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="33dp"
+            android:onClick="logoutDepartment"
+            android:text="LOG OUT"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/emergencyapp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/agaplogo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="OnClick" />
+
+    <ImageView
+        android:id="@+id/agaplogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="80dp"
+        android:background="@drawable/logonew1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/emergencyapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="USER ACTIVITY"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/agaplogo" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What type of emergency?"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/emergencyapp"
+            app:layout_constraintStart_toStartOf="@+id/emergencyapp"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyapp" />
+
+
+        <Button
+            android:id="@+id/btnPolice"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/police"
+            app:layout_constraintEnd_toStartOf="@+id/btnHospital"
+            app:layout_constraintHorizontal_bias="0.763"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/btnHospital" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POLICE"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnPolice"
+            app:layout_constraintStart_toStartOf="@+id/btnPolice"
+            app:layout_constraintTop_toBottomOf="@+id/btnPolice" />
+
+        <Button
+            android:id="@+id/btnHospital"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/hospital"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintStart_toStartOf="@+id/textView5"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOSPITAL"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnHospital"
+            app:layout_constraintStart_toStartOf="@+id/btnHospital"
+            app:layout_constraintTop_toBottomOf="@+id/btnHospital" />
+
+        <Button
+            android:id="@+id/btnFire"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/fire"
+            app:layout_constraintEnd_toEndOf="@+id/textView5"
+            app:layout_constraintHorizontal_bias="0.159"
+            app:layout_constraintStart_toEndOf="@+id/btnHospital"
+            app:layout_constraintTop_toTopOf="@+id/btnHospital" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FIRE"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnFire"
+            app:layout_constraintStart_toStartOf="@+id/btnFire"
+            app:layout_constraintTop_toBottomOf="@+id/btnFire" />
+
+
+        <Button
+            android:id="@+id/btnDisaster"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/disaster"
+            app:layout_constraintEnd_toEndOf="@+id/btnPolice"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnPolice"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISASTER"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/btnDisaster"
+            app:layout_constraintStart_toStartOf="@+id/btnDisaster"
+            app:layout_constraintTop_toBottomOf="@+id/btnDisaster" />
+
+        <Button
+            android:id="@+id/piclocate"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/locate"
+            app:layout_constraintEnd_toEndOf="@+id/btnHospital"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnHospital"
+            app:layout_constraintTop_toTopOf="@+id/btnDisaster" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIN LOCATION"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/piclocate"
+            app:layout_constraintStart_toStartOf="@+id/piclocate"
+            app:layout_constraintTop_toBottomOf="@+id/piclocate" />
+
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REPORT"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/report"
+            app:layout_constraintHorizontal_bias="0.407"
+            app:layout_constraintStart_toStartOf="@+id/report"
+            app:layout_constraintTop_toBottomOf="@+id/report" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/talktous"
+            app:layout_constraintEnd_toEndOf="@+id/btnFire"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btnFire"
+            app:layout_constraintTop_toTopOf="@+id/piclocate" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

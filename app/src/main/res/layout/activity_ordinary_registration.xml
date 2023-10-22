@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg4"
+    android:layout_height="match_parent"
+    tools:context=".Login.OrdinaryRegistration">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="281dp">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:background="#fff"
+            android:text="Already have an account? Sign in here"
+            android:textAllCaps="false"
+            android:textColor="#499344"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/signuprespondertoactivity"
+            app:layout_constraintStart_toStartOf="@+id/signuprespondertoactivity"
+            app:layout_constraintTop_toBottomOf="@+id/signuprespondertoactivity" />
+
+        <ImageView
+            android:id="@+id/agaplogo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/logonew1"
+            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/signuprespondertoactivity"
+            android:layout_width="150dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg5"
+            android:text="Sign up"
+            android:textColor="#F1F8F0"
+            app:layout_constraintBottom_toTopOf="@+id/signin"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="302dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="Password"
+            android:textColor="@color/colorwhite"
+            app:layout_constraintBottom_toTopOf="@+id/signuprespondertoactivity"
+            app:layout_constraintEnd_toEndOf="@+id/email"
+            app:layout_constraintStart_toStartOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="302dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:hint="Email"
+            android:textColor="@color/colorwhite"
+            app:layout_constraintBottom_toTopOf="@+id/password"
+            app:layout_constraintEnd_toEndOf="@+id/name"
+            app:layout_constraintStart_toStartOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="RESPONDER REGISTRATION"
+            android:textColor="@color/colorwhite"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/name"
+            app:layout_constraintEnd_toEndOf="@+id/agaplogo"
+            app:layout_constraintStart_toStartOf="@+id/agaplogo"
+            app:layout_constraintTop_toBottomOf="@+id/agaplogo" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="302dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:hint="Name"
+            android:textColor="@color/colorwhite"
+            app:layout_constraintBottom_toTopOf="@+id/email"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

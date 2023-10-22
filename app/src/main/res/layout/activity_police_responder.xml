@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".PoliceResponder">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="80dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="POLICE ACTIVITY"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20dp"
+            android:background="@color/colorwhite"
+            android:text="LOG OUT"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.023"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/fire"
+            android:contentDescription="TODO"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+        <Button
+            android:id="@+id/mapDisaster"
+            android:layout_width="107dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/locate"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.256"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/call"
+            android:layout_width="105dp"
+            android:layout_height="102dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/call"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="@+id/mapDisaster"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/mapDisaster"
+            app:layout_constraintTop_toBottomOf="@+id/mapDisaster"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/report"
+            android:layout_width="106dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/report"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/mapDisaster"
+            app:layout_constraintTop_toTopOf="@+id/mapDisaster" />
+
+        <Button
+            android:id="@+id/panel"
+            android:layout_width="107dp"
+            android:layout_height="108dp"
+            android:background="@drawable/admin"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="@+id/report"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/report"
+            app:layout_constraintTop_toBottomOf="@+id/report"
+            app:layout_constraintVertical_bias="0.814"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:text="MAP ACTIVITY"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/call"
+            app:layout_constraintEnd_toEndOf="@+id/mapDisaster"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="@+id/mapDisaster"
+            app:layout_constraintTop_toBottomOf="@+id/mapDisaster"
+            app:layout_constraintVertical_bias="0.466"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="5dp"
+            android:text="REPORTS"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/panel"
+            app:layout_constraintEnd_toEndOf="@+id/report"
+            app:layout_constraintHorizontal_bias="0.431"
+            app:layout_constraintStart_toStartOf="@+id/report"
+            app:layout_constraintTop_toBottomOf="@+id/report"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="CALL ACTIVITY"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/call"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/call"
+            app:layout_constraintTop_toBottomOf="@+id/call"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="ADMIN PANEL"
+            android:textColor="@color/colorwhite"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/panel"
+            app:layout_constraintStart_toStartOf="@+id/panel"
+            app:layout_constraintTop_toBottomOf="@+id/panel"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

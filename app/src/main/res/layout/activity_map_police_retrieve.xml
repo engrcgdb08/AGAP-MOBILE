@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetrieveResponder.MapPoliceRetrieve">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="162dp"
+        android:layout_marginBottom="321dp"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="USER'S EXACT LOCATION"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp" />
+
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginEnd="302dp"
+        android:layout_marginBottom="222dp"
+        android:gravity="center"
+        android:text="Latitude"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="148dp"
+        android:gravity="center"
+        android:text="Longitude"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="146dp"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/lng"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/proceed"
+            android:text="RESPOND"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="250dp"
+            android:layout_height="50dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.agap">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User.UserActivity"></activity>
+        <activity android:name=".User.Safety" />
+        <activity android:name=".User.How" />
+        <activity android:name=".User.News" />
+        <activity android:name=".DepartmentActivity.HospitalActivity" />
+        <activity android:name=".DepartmentActivity.DisasterActivity" />
+        <activity android:name=".DepartmentActivity.FireActivity" />
+        <activity android:name=".DepartmentActivity.OrdinaryEmergency" />
+        <activity android:name=".Login.OrdinaryRegistration" />
+        <activity android:name=".Login.ResponderLogin" />
+        <activity android:name=".Login.OrdinaryLogin" />
+        <activity android:name=".Login.UserLogin" />
+        <activity android:name=".Login.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB9wxIrTeFM1b-LCd_djGwfJ5t_JNR5nQM"/>
+        <activity
+            android:name=".MapsActivity.MapsActivityPolice"
+            android:label="@string/title_activity_maps_police"/>
+
+        <activity
+            android:name=".MapsActivity.MapsActivityHospital"
+            android:label="@string/title_activity_maps_hospital" />
+        <activity
+            android:name=".MapsActivity.MapsActivityDisaster"
+            android:label="@string/title_activity_maps_disaster" />
+        <activity
+            android:name=".MapsActivity.MapsActivityFire"
+            android:label="@string/title_activity_maps_fire" />
+
+
+    </application>
+
+</manifest>

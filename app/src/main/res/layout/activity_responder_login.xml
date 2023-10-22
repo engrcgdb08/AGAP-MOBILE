@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent"
+    android:id="@+id/ordinarylogin"
+    tools:context=".Login.ResponderLogin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/agaplogo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="80dp"
+            android:background="@drawable/logonew1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.594"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/emergencyapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Emergency Response provider"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/agaplogo"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="@+id/agaplogo"
+            app:layout_constraintTop_toBottomOf="@+id/agaplogo" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="SIGN IN YOUR ACCOUNT"
+            android:textColor="@color/colorwhite"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/emailResponder"
+            app:layout_constraintEnd_toEndOf="@+id/emergencyapp"
+            app:layout_constraintStart_toStartOf="@+id/emergencyapp"
+            app:layout_constraintTop_toBottomOf="@+id/emergencyapp" />
+
+        <EditText
+            android:id="@+id/emailResponder"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:textColor="@color/colorwhite"
+            android:textColorHint="@color/colorwhite"
+            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintHorizontal_bias="0.727"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:textColorHint="@color/colorwhite"
+            app:layout_constraintEnd_toEndOf="@+id/emailResponder"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/emailResponder"
+            app:layout_constraintTop_toBottomOf="@+id/emailResponder" />
+
+        <Button
+            android:id="@+id/respondersignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@color/colorwhite"
+            android:text="Sign in"
+            android:textColor="#499344"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="346dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Are you a Department Personnel or Volunteer without an account? Fill up form to become one of us!"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/respondersignin"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/respondersignin"
+            app:layout_constraintTop_toBottomOf="@+id/respondersignin" />
+
+        <Button
+            android:id="@+id/fillform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form"
+            android:textStyle="bold"
+            android:textColor="#499344"
+            android:textColorLink="@color/colorwhite"
+            app:layout_constraintEnd_toEndOf="@+id/textView22"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
